@@ -8,6 +8,7 @@ import Footer from '../components/Footer.astro';
 interface Props {
     title: string;
 }
+const dsadsa = import.meta.env."d"+sa+"d"+sa;
 
 const { title } = Astro.props;
 ---
@@ -16,6 +17,9 @@ const { title } = Astro.props;
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+   <script define:vars={{ dsadsa }}>
+            alert(dsadsa);
+        </script>
         <title>{title}</title>
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
